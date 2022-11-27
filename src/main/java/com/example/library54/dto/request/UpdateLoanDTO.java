@@ -19,10 +19,10 @@ public class UpdateLoanDTO {
     @Size(max = 300)
     private String notes;
 
-    @JsonFormat(shape= JsonFormat.Shape.STRING, pattern = "MM/dd/yyyy HH:mm:ss", timezone = "Turkey")
+    @JsonFormat(shape= JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss", timezone = "Turkey")
     @NotNull(message="Please provide expire date")
     private LocalDateTime expireDate;
 
-    @JsonFormat(shape= JsonFormat.Shape.STRING, pattern = "MM/dd/yyyy HH:mm:ss", timezone = "Turkey")
+    @JsonFormat(shape= JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss", timezone = "Turkey")
     private LocalDateTime returnDate;
 }

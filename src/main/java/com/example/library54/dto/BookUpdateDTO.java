@@ -1,9 +1,5 @@
 package com.example.library54.dto;
 
-import com.example.library54.domain.Author;
-import com.example.library54.domain.Category;
-import com.example.library54.domain.Loan;
-import com.example.library54.domain.Publisher;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -14,14 +10,12 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 import java.io.File;
-import java.time.LocalDateTime;
-import java.util.List;
 
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class BookDTO {
+public class BookUpdateDTO {
 
     @Size(min = 2, max = 80, message = "Size is exceeded")
     @NotNull(message = "Please provide book name")
@@ -53,6 +47,9 @@ public class BookDTO {
     @NotNull(message = "Please provide shelf code")
     @Pattern(regexp = "^[A-Z]{2}-\\d{3}$", message = "Please provide valid shelf code")
     private String shelfCode;
+
+    @NotNull(message = "Please provide book featured")
+    private boolean active;
 
     @NotNull(message = "Please provide book featured")
     private boolean featured;

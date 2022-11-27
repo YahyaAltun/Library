@@ -9,10 +9,13 @@ public class ErrorMessage {
     public final static String LOAN_NOT_FOUND_MSG="Loan with id %d not found";
 
     public final static String AUTHOR_NOT_FOUND_MESSAGE="Author with id %d not found";
+    public final static String AUTHOR_HAS_BOOK_MESSAGE="You cannot delete an author who has a book";
 
     public final static String PUBLISHER_NOT_FOUND_MESSAGE="Publisher with id %d not found";
+    public final static String PUBLİSHER_HAS_BOOK_MESSAGE="You cannot delete an publisher who has a book";
 
     public final static String CATEGORY_NOT_FOUND_MESSAGE="Category with id %d not found";
+    public final static String CATEGORY_HAS_BOOK_MESSAGE="You cannot delete an category who has a book";
 
     public final static String USER_NOT_FOUND_MESSAGE="User with id %d not found";
     public final static String USER_USED_BY_LOAN_MESSAGE = "User could not be deleted. User loaned a book";

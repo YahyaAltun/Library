@@ -26,7 +26,7 @@ public class Author {
     private String name;
 
     @Column(nullable = false)
-    private Boolean buitIn=false;
+    private Boolean builtIn=false;
 
     @OneToMany(mappedBy="authorId")
     @JsonIgnoreProperties("authorId")

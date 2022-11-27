@@ -21,6 +21,9 @@ spring:
       hibernate:
         format_sql: true
 
+file:
+  uploaddir: 'C:\Users\Yahya\IdeaProjects\library54\images'
+
 logging:
   file:
     name: logs/L54.log
